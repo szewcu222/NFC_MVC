@@ -201,8 +201,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Enums\TypZamowienia.cs" />
+    <Compile Include="Models\Grupa.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Lodowka.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Produkt.cs" />
+    <Compile Include="Models\StanLodowki.cs" />
+    <Compile Include="Models\UpodobanieUzytkownika.cs" />
+    <Compile Include="Models\Zamowienie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
