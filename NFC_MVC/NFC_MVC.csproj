@@ -198,9 +198,19 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DAL\ApplicationDbContext.cs" />
+    <Compile Include="DAL\InitialDb.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808081400429_InitialCreate.cs" />
+    <Compile Include="Migrations\201808081400429_InitialCreate.Designer.cs">
+      <DependentUpon>201808081400429_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808081421203_AddZamowinie.cs" />
+    <Compile Include="Migrations\201808081421203_AddZamowinie.Designer.cs">
+      <DependentUpon>201808081421203_AddZamowinie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Enums\TypZamowienia.cs" />
     <Compile Include="Models\Grupa.cs" />
@@ -277,7 +287,14 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201808081400429_InitialCreate.resx">
+      <DependentUpon>201808081400429_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808081421203_AddZamowinie.resx">
+      <DependentUpon>201808081421203_AddZamowinie.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

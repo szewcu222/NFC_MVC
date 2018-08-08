@@ -238,3 +238,6 @@ C:\Users\Damian\OneDrive\Documents\GitHub\NFC_STORe\NFC_MVC\bin\Microsoft.AI.Win
 C:\Users\Damian\OneDrive\Documents\GitHub\NFC_STORe\NFC_MVC\bin\Microsoft.AI.Web.xml
 C:\Users\Damian\OneDrive\Documents\GitHub\NFC_STORe\NFC_MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Damian\OneDrive\Documents\GitHub\NFC_STORe\NFC_MVC\obj\Debug\NFC_MVC.csproj.CopyComplete
+C:\Users\Damian\OneDrive\Documents\GitHub\NFC_STORe\NFC_MVC\obj\Debug\NFC_MVC.Migrations.InitialCreate.resources
+C:\Users\Damian\OneDrive\Documents\GitHub\NFC_STORe\NFC_MVC\obj\Debug\NFC_MVC.csproj.GenerateResource.cache
+C:\Users\Damian\OneDrive\Documents\GitHub\NFC_STORe\NFC_MVC\obj\Debug\NFC_MVC.Migrations.AddZamowinie.resources

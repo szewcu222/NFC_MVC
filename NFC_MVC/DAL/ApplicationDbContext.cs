@@ -23,6 +23,11 @@ namespace NFC_MVC.DAL
         public DbSet<UpodobanieUzytkownika> UpodobaniaUzytkownikow { get; set; }
         public DbSet<Zamowienie> Zamowienia { get; set; }
 
+        static ApplicationDbContext()
+        {
+            Database.SetInitializer(new InitialDb());
+        }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

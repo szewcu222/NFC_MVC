@@ -13,6 +13,7 @@ namespace NFC_MVC.Models
         public Produkt()
         {
             StanLodowki = new HashSet<StanLodowki>();
+            Zamowienia = new HashSet<Zamowienie>();
             UpodobanieUzytkownikow = new HashSet<UpodobanieUzytkownika>();
         }
 
@@ -35,8 +36,8 @@ namespace NFC_MVC.Models
 
         public float Cena { get; set; }
 
+        public virtual ICollection<Zamowienie> Zamowienia { get; set; }
         public virtual ICollection<StanLodowki> StanLodowki { get; set; }
-
         public virtual ICollection<UpodobanieUzytkownika> UpodobanieUzytkownikow { get; set; }
 
     }

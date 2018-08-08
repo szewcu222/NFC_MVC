@@ -32,7 +32,7 @@ namespace NFC_MVC.Controllers
             return View();
         }
 
-        public ActionResult GetProdukt()
+        public JsonResult GetProdukt()
         {
             Produkt produkt = new Produkt
             {
@@ -43,8 +43,26 @@ namespace NFC_MVC.Controllers
             };
             db.Produkty.Add(produkt);
             db.SaveChanges();
-
+            
             return Json(produkt);
+        }
+
+        public string zam()
+        {
+            var u1 = db.Users.SingleOrDefault(u => u.UserName == "laroja_ns9@gmail.com").Id;
+
+            var z = new Zamowienie
+            {
+                UzytkownikId = u1,
+                LodowkaId = 5,
+                DataDostarczenia = DateTime.Now,
+                DataZamowienia = DateTime.Now
+                //Produkty = new List<Produkt>{ context.Produkty.Find(1) }
+            };
+            db.Zamowienia.Add(z);
+            db.SaveChanges();
+
+            return z.UzytkownikId;
         }
 
     }
