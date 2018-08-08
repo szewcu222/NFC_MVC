@@ -12,11 +12,15 @@ namespace NFC_MVC.Models
     {
         public int Ilosc { get; set; }
 
-        [ForeignKey("Lodowka")]
+        [Key]
+        [Column(Order = 0)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int LodowkaId { get; set; }
         public Lodowka Lodowka { get; set; }
 
-        [ForeignKey("Produkt")]
+        [Key]
+        [Column(Order = 1)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ProduktId { get; set; }
         public Produkt Produkt { get; set; }
     }

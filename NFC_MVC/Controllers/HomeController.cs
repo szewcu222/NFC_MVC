@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NFC_MVC.DAL;
+using NFC_MVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +10,9 @@ namespace NFC_MVC.Controllers
 {
     public class HomeController : Controller
     {
+
+        private ApplicationDbContext db = new ApplicationDbContext();
+
         public ActionResult Index()
         {
             return View();
@@ -26,5 +31,21 @@ namespace NFC_MVC.Controllers
 
             return View();
         }
+
+        public ActionResult GetProdukt()
+        {
+            Produkt produkt = new Produkt
+            {
+                Cena = 12,
+                DataWaznosci = DateTime.Now,
+                Nazwa = "jabko",
+                RFIDTag = "1111"
+            };
+            db.Produkty.Add(produkt);
+            db.SaveChanges();
+
+            return Json(produkt);
+        }
+
     }
 }

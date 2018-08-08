@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
+using NFC_MVC.DAL;
 using NFC_MVC.Models;
 
 namespace NFC_MVC
